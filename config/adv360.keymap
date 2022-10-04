@@ -51,7 +51,7 @@
             bindings = <
    &kp TAB      &kp N1    &kp N2    &kp N3     &kp N4    &kp N5             &kp F14                                                                                                &none         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp LC(LGUI)
   &kp F12       &kp Q     &kp W     &kp F      &kp P     &kp B              &kp LC(LSHFT)                                                                                          &kp RC(RSHFT) &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp BSLH
- &pht LSHFT ESC &kp A     &kp R     &kp S      &kp T     &kp G             &kp EQUAL          &kp F16    &kp LGUI                                           &kp LGUI   &kp LC(TAB) &kp MINUS     &kp M      &kp N      &kp E      &kp I      &kp O      &kp RSHFT
+ &pht LSHFT ESC &kp A     &kp R     &kp S      &kp T     &kp G             &kp EQUAL         &kp LC(TAB) &kp LGUI                                           &kp LGUI   &kp LC(TAB) &kp MINUS     &kp M      &kp N      &kp E      &kp I      &kp O      &kp RSHFT
  &kp LCTRL      &kp Z     &kp X     &kp C      &kp D     &kp V                                &none      &none      &kp LALT  &none &none      &kp RALT     &none      &none                     &kp K      &kp H      &kp COMMA  &kp DOT   &kp FSLH    &kp RCTRL
  &kp DOWN       &kp GRAVE &kp SQT   &kp LEFT   &kp LALT                                       &kp BSPC   &mo 1      &kp LCTRL                  &kp RCTRL    &kp RET    &kp SPACE                            &kp RALT   &kp RIGHT  &kp LBKT  &kp RBKT    &kp UP
             >;
@@ -61,7 +61,7 @@
             bindings = <
   &kp SLCK      &kp F1    &kp F2    &kp F3    &kp F4 &kp F5                 &kp F6                                                                                                         &kp F7   &kp F8    &kp F9   &kp F10  &kp F11  &kp F12     &kp DEL
    &trans       &trans    &kp PSCRN &kp CAPS  &trans &trans                 &trans                                                                                                         &trans   &trans    &kp N7   &kp N8   &kp N9   &trans      &mo 3
-  &trans        &kp HOME  &kp PG_UP &kp PG_DN &kp END &trans                 &trans            &trans     &trans                                                    &trans    &trans       &trans   &kp DOT   &kp N4   &kp N5   &kp N6    &kp LC(TAB) &trans
+  &trans        &kp HOME  &kp PG_UP &kp PG_DN &kp END &trans                 &trans            &trans     &trans                                                    &trans    &trans       &trans   &kp DOT   &kp N4   &kp N5   &kp N6   &kp LC(TAB) &kp LA(TAB)
   &trans        &trans    &trans    &trans    &trans &trans                         &none      &none     &trans     &none &none            &trans                 &none      &none                 &kp COMMA &kp N1   &kp N2   &kp N3    &kp N0      &trans
   &trans        &trans    &trans    &trans    &trans                               &mo 3       &trans     &trans                            &trans                 &trans     &trans                          &trans   &trans   &kp LPAR &kp RPAR    &trans
             >;
