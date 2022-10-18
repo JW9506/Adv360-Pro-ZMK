@@ -50,11 +50,13 @@
         #binding-cells = <0>;
         wait-ms = <10>;
         bindings
-            = <&macro_tap &kp LA(TAB)>
+            = <&kp LA(TAB)>
             , <&macro_wait_time 550>
+            , <&macro_tap_time 500>
             , <&kp SPACE>
+            , <&macro_tap_time 100>
             , <&macro_wait_time 550>
-            , <&macro_tap &kp LA(TAB)>
+            , <&kp LA(TAB)>
             ;
     };
   };
