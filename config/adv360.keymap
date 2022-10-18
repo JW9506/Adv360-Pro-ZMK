@@ -51,9 +51,9 @@
         wait-ms = <10>;
         bindings
             = <&macro_tap &kp LA(TAB)>
-            , <&macro_wait_time 150>
+            , <&macro_wait_time 550>
             , <&kp SPACE>
-            , <&macro_wait_time 150>
+            , <&macro_wait_time 550>
             , <&macro_tap &kp LA(TAB)>
             ;
     };
