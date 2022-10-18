@@ -48,7 +48,7 @@
         label = "pause_vid";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <550>;
+        wait-ms = <150>;
         bindings
             = <&kp LA(TAB)>
             , <&kp SPACE>
