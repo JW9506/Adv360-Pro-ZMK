@@ -95,7 +95,7 @@
 
         default_layer {
             bindings = <
-  &kp TAB      &kp N1    &kp N2    &kp N3     &kp N4    &kp N5             &none                                                                                                   &none         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp LC(LGUI)
+  &kp TAB      &none     &none    &kp LA(TAB) &none     &none              &none                                                                                                   &none         &none      &none    &kp LC(TAB)  &none      &none      &kp LC(LGUI)
  &kp LC(LSHFT) &kp Q     &kp W     &kp F      &kp P     &kp B              &kp F12                                                                                                 &kp F11       &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp RC(RSHFT)
  &pht LSHFT ESC &kp A     &kp R     &kp S      &kp T     &kp G             &kp EQUAL         &kp LC(TAB) &kp LGUI                                           &kp LGUI   &kp LC(TAB) &kp MINUS     &kp M      &kp N      &kp E      &kp I      &kp O      &kp RSHFT
  &kp LCTRL      &kp Z     &kp X     &kp C      &kp D     &kp V                                &none      &none      &kp LALT  &none &none      &kp RALT     &none      &none                     &kp K      &kp H      &kp COMMA  &kp DOT   &kp FSLH    &kp RCTRL
@@ -105,11 +105,11 @@
 
         layer_keypad {
             bindings = <
-  &kp SLCK &kp F1      &kp F2    &kp F3    &kp F4 &kp F5                 &kp F6                                                                                                         &kp F7   &kp F8    &kp F9       &kp F10  &kp F11      &kp F12     &kp DEL
-   &trans  &kp TAB     &kp PSCRN &kp CAPS  &trans &trans                 &kp LC(LALT)                                                                                                &kp RC(LALT)   &trans    &kp N7       &kp N8   &kp N9    &kp BSLH    &trans
-  &trans   &kp HOME    &kp PG_UP &kp PG_DN &kp END &trans                &trans            &trans     &trans                                                    &trans    &trans       &trans   &kp DOT   &kp N4        &kp N5   &kp N6       &kp SEMI    &trans
-  &trans   &pause_vid  &kp SPACE &kp RET &kp LC(LGUI) &trans                         &none      &none     &trans     &none &none            &trans                 &none      &none                 &kp COMMA &kp N1        &kp N2   &kp N3   &kp N0      &kp LC(TAB)
-  &trans   &trans      &trans    &trans    &trans                               &mo 3       &trans     &trans                            &trans                 &trans     &trans                         &kp LA(TAB)   &trans   &kp LPAR     &kp RPAR    &trans
+  &kp SLCK &kp F1      &kp F2    &kp F3    &kp F4 &kp F5                 &kp F6                                                                                                         &kp F7   &kp F8    &kp F9       &kp F10     &kp F11   &kp F12     &kp DEL
+  &trans   &kp TAB     &kp PSCRN &kp CAPS  &trans &trans                 &kp LC(LALT)                                                                                                &kp RC(LALT)   &trans    &kp N7       &kp N8   &kp N9    &kp BSLH    &trans
+  &trans   &kp HOME    &kp PG_UP &kp PG_DN &kp END &trans                &trans            &trans     &trans                                                    &trans    &trans       &trans   &kp DOT   &kp N4        &kp N5      &kp N6    &kp SEMI    &trans
+  &trans   &pause_vid  &kp SPACE &kp RET &kp LC(LGUI) &trans                         &none      &none     &trans     &none &none            &trans                 &none      &none                 &kp COMMA &kp N1        &kp N2  &kp N3    &kp N0      &trans
+  &trans   &trans      &trans    &trans    &trans                               &mo 3       &trans     &trans                            &trans                 &trans     &trans                         &kp trans     &trans      &kp LPAR  &kp RPAR    &trans
             >;
         };
 
