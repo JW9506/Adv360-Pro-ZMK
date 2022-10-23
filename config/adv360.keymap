@@ -95,11 +95,11 @@
 
         default_layer {
             bindings = <
-  &kp TAB  &kp LA(SPACE) &none    &kp LA(TAB) &none     &kp LA(LSHFT)      &none                                                                                                   &none         &none      &none    &kp LC(TAB)  &none &kp RA(SPACE)   &kp LC(LGUI)
- &kp LC(LSHFT) &kp Q     &kp W     &kp F      &kp P     &kp B              &kp F12                                                                                                 &kp F11       &kp J      &kp L      &kp U      &kp Y      &none      &kp RC(RSHFT)
- &pht LSHFT ESC &kp A     &kp R     &kp S      &kp T     &kp G             &kp EQUAL          &none      &kp LGUI                                           &kp LGUI   &none       &kp MINUS     &kp M      &kp N      &kp E      &kp I      &kp O      &kp RSHFT
- &kp LCTRL      &kp Z     &kp X     &kp C      &kp D     &kp V                                &none      &none      &kp LALT  &none &none      &kp RALT     &none      &none                     &kp K      &kp H      &kp COMMA  &kp DOT   &kp FSLH    &kp RCTRL
- &kp DOWN       &kp GRAVE &kp SQT   &kp LEFT   &kp LALT                                       &kp BSPC   &mo 1      &kp LCTRL                  &kp RCTRL    &kp RET    &kp SPACE                            &kp RALT   &kp RIGHT  &kp LBKT  &kp RBKT    &kp UP
+ &kp TAB  &kp LA(SPACE) &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                                                   &none         &none      &none    &kp LC(TAB)  &none &kp RA(SPACE)   &kp LC(LGUI)
+ &kp LC(LSHFT) &kp Q     &kp W        &kp F      &kp P             &kp B              &kp F12                                                                                                 &kp F11       &kp J      &kp L      &kp U      &kp Y      &none      &kp RC(RSHFT)
+ &pht LSHFT ESC &kp A     &kp R       &kp S      &kp T             &kp G             &kp EQUAL          &none      &kp LGUI                                           &kp LGUI   &none       &kp MINUS     &kp M      &kp N      &kp E      &kp I      &kp O      &kp RSHFT
+ &kp LCTRL      &kp Z     &kp X       &kp C      &kp D             &kp V                                &none      &none      &kp LALT  &none &none      &kp RALT     &none      &none                     &kp K      &kp H      &kp COMMA  &kp DOT   &kp FSLH    &kp RCTRL
+ &kp DOWN       &kp GRAVE &kp SQT     &kp LEFT   &kp LALT                                       &kp BSPC   &mo 1      &kp LCTRL                  &kp RCTRL    &kp RET    &kp SPACE                            &kp RALT   &kp RIGHT  &kp LBKT  &kp RBKT    &kp UP
             >;
         };
 
