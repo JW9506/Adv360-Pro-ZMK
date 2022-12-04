@@ -76,6 +76,17 @@
             , <&kp END>
             ;
     };
+    tuskequal: tuskequal {
+        label = "tuskequal";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+            = <&kp COLON>
+            , <&kp EQUAL>
+            ;
+    };
   };
 
   keymap {
