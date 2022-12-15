@@ -157,8 +157,8 @@
 //                                                       |       | LGUI  |           | LGUI  |        |
 //                                               -------------------------           ---------------------------
 //                                               |       |       | LALT  |           | RALT  |        |        |
-//                                               | BKSP  | LAYER |--------           --------|  ENTER |  BSPC  |
-//                                               |       | SWITCH| LCTRL |           | RCTRL |        |        |
+//                                               | BKSP  | LAYER |--------           --------| LAYER  |  BSPC  |
+//                                               |       | SWITCH| LCTRL |           | RCTRL | SWITCH |        |
 //                                               -------------------------           ---------------------------
 
         default_layer {
@@ -171,7 +171,7 @@
 
                                                                                                      &none   &kp LGUI      &kp LGUI   &none
                                                                                                              &kp LALT      &kp RALT
-                                                                                           &kp BSPC  &mo_td  &kp LCTRL     &kp RCTRL  &kp RET   &kp SPACE
+                                                                                           &kp BSPC  &mo_td  &kp LCTRL     &kp RCTRL  &mo_td   &kp SPACE
             >;
         };
 
@@ -185,7 +185,7 @@
 
                                                                                                   &trans    &trans               &trans   &trans
                                                                                                             &trans               &trans
-                                                                                       &trans     &trans     &mo 3               &trans   &trans   &trans
+                                                                                       &trans     &trans     &mo 3               &trans   &kp RET   &trans
 
 
             >;
