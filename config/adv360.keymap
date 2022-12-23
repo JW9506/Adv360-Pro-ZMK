@@ -32,7 +32,7 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-    lbhm: balanced_homerow_mods {
+    lbhm: left_balanced_homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
@@ -40,7 +40,36 @@
         quick-tap-ms = <0>;
         flavor = "balanced";
         bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = < 15 16 17 18 19 20 21  37 38 39 40 41 42 43  59 60 61 62 63 64 65  82 83 84 85 86 87  105 106 107 108 109  56 57  78  100 101 102 >;
+        hold-trigger-key-positions = <
+          15 16 17 18 19 20 21 
+          37 38 39 40 41 42 43 
+          59 60 61 62 63 64 65 
+             82 83 84 85 86 87 
+                105 106 107 108 109 
+          56 57 
+          78 
+          100 101 102
+        >;
+    };
+
+    rbhm: right_balanced_homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;    // <---[[moderate duration]]
+        quick-tap-ms = <0>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <
+          0  1  2  3  4  5  6
+          22 23 24 25 26 27 28
+          44 45 46 47 48 49 50
+          66 67 68 69 70 71
+          88 89 90 91 92
+                          52 53
+                             75
+                       95 96 97
+        >;
     };
 
     pht: positional_hold_tap {
@@ -145,7 +174,7 @@
             bindings = <
  &kp TAB       &kp LA(SPACE)  &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                   &none         &none   &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))  &kp LG(TAB)  &kp LC(LGUI)
  &kp LC(LSHFT) &kp Q          &kp W         &kp F      &kp P             &kp B              &kp F12                                                                  &kp F11       &kp J      &kp L      &kp U          &kp Y              &kp EXCL     &kp RC(RSHFT)
- &pht LSHFT ESC &lbhm LCTRL A  &lbhm LSHFT R  &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT     &kp M      &kp N      &kp E           &kp        I       &kp        O  &kp RSHFT
+ &pht LSHFT ESC &lbhm LCTRL A  &lbhm LSHFT R  &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT     &kp M      &kp N      &kp E         &rbhm RSHFT I    &rbhm RCTRL O  &kp RSHFT
  &kp LCTRL      &kp Z         &kp X         &kp C      &kp D             &kp V                                                                                                     &kp K      &kp H      &kp COMMA      &kp DOT            &kp FSLH     &kp RCTRL
  &kp DOWN       &kp GRAVE     &kp SQT       &kp LEFT   &kp LALT                                                                                                                               &kp RALT   &kp RIGHT      &kp LBKT           &kp RBKT     &kp UP
 
