@@ -176,7 +176,7 @@
 
                                                                                                   &trans    &trans               &trans   &trans
                                                                                                             &trans               &trans
-                                                                                       &kp DEL    &trans     &mo 3               &trans   &kp RET   &trans
+                                                                                       &kp DEL    &mo 2     &mo 3               &trans   &kp RET   &trans
 
 
             >;
