@@ -99,6 +99,20 @@
       tapping-term-ms = <200>;
       bindings = <&mo 1>, <&mo 2>;
     };
+    l_alt_gui: l_alt_or_gui {
+      compatible = "zmk,behavior-tap-dance";
+      label = "L_ALT_OR_GUI";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp LALT>, <&kp LSHFT>;
+    };
+    r_alt_gui: r_alt_or_gui {
+      compatible = "zmk,behavior-tap-dance";
+      label = "R_ALT_OR_GUI";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp RALT>, <&kp RSHFT>;
+    };
   };
 
   macros {
@@ -188,9 +202,9 @@
  &kp LC(LSHFT) &kp Q          &kp W         &kp F      &kp P             &kp B              &kp F12                                                                  &kp F11       &kp J      &kp L      &kp U          &kp Y              &kp EXCL     &kp RC(RSHFT)
 &pht LSHFT ESC &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &kp O        &kp RSHFT
  &kp LCTRL      &kp Z         &kp X         &kp C      &kp D             &kp V                                                                                                     &kp K      &kp H      &kp COMMA      &kp DOT            &kp FSLH     &kp RCTRL
- &kp DOWN       &kp GRAVE     &kp SQT       &kp LEFT   &kp LALT                                                                                                                               &kp RALT   &kp RIGHT      &kp LBKT           &kp RBKT     &kp UP
+ &kp DOWN       &kp GRAVE     &kp SQT       &kp LEFT   &l_alt_gui                                                                                                                             &r_alt_gui &kp RIGHT      &kp LBKT           &kp RBKT     &kp UP
 
-                                                                                                     &kp UP   &kp LGUI      &kp LGUI   &kp DOWN
+                                                                                                     &kp UP  &kp LGUI      &kp LGUI   &kp DOWN
                                                                                                              &kp LALT      &kp RALT
                                                                                            &kp BSPC  &mo_td  &kp LCTRL     &kp RCTRL  &mo_td   &kp SPACE
             >;
