@@ -113,6 +113,15 @@
       tapping-term-ms = <200>;
       bindings = <&kp RALT>, <&kp RGUI>;
     };
+
+    skq: sticky_key_quick_release {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      release-after-ms = <400>;
+      quick-release;
+    };
   };
 
   macros {
@@ -181,9 +190,9 @@
 
 // -----------------------------------------------------------------------           ---------------------------------------------------------------------
 // |   TAB    |         |         |         |         |         |  None  |           | None |         |         |         |         |          |          |
-// |LC(LSHFT) |    Q    |    W    |    F    |    P    |    B    |  None  |           | None |    Y    |    U    |    I    |    O    |    P     |  :/\     |
-// |LSHFT/ESC |    A    |    R    |    S    |    T    |    G    |  None  |           | None |    H    |    J    |    K    |    L    |    ;     |  '/"     |
-// |  LCTRL   |    Z    |    X    |    C    |    D    |    V    |---------           -------|    N    |    M    |    ,    |    .    |    /     |  RSHIFT  |
+// |LC(LSHFT) |    Q    |    W    |    F    |    P    |    B    |  None  |           | None |    Y    |    U    |    I    |    O    |    P     | LC(LSHFT)|
+// |LSHFT/ESC |    A    |    R    |    S    |    T    |    G    |  None  |           | None |    H    |    J    |    K    |    L    |    ;     |  RSHFT   |
+// |  LCTRL   |    Z    |    X    |    C    |    D    |    V    |---------           -------|    N    |    M    |    ,    |    .    |    /     |  RCTRL   |
 // |  DOWN    |    `    |    '    |  LEFT   |   LALT  |----------                           ----------|   RALT  |  RIGHT  |    [    |    ]     |   UP     |
 // ----------------------------------------------------                                                ----------------------------------------------------
 //
@@ -200,7 +209,7 @@
             bindings = <
  &kp TAB       &kp LA(SPACE)  &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                   &none         &none   &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))  &kp LG(TAB)  &kp LC(LGUI)
  &kp LC(LSHFT) &kp Q          &kp W         &kp F      &kp P             &kp B              &kp F12                                                                  &kp F11       &kp J      &kp L      &kp U          &kp Y              &kp EXCL     &kp RC(RSHFT)
-&pht LSHFT ESC &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &kp O        &kp RSHFT
+&pht LSHFT ESC &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &kp O        &skq RSHFT
  &kp LCTRL      &kp Z         &kp X         &kp C      &kp D             &kp V                                                                                                     &kp K      &kp H      &kp COMMA      &kp DOT            &kp FSLH     &kp RCTRL
  &kp DOWN       &kp GRAVE     &kp SQT       &kp LEFT   &l_alt_gui                                                                                                                             &r_alt_gui &kp RIGHT      &kp LBKT           &kp RBKT     &kp UP
 
