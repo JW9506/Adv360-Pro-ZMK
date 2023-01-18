@@ -127,6 +127,13 @@
       release-after-ms = <400>;
       quick-release;
     };
+    rsh_cl: r_shift_or_cap_lock {
+      compatible = "zmk,behavior-tap-dance";
+      label = "R_SHIFT_OR_CAP_LOCK";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&skq RSHFT>, <&kp CAPS>;
+    };
   };
 
   macros {
@@ -214,7 +221,7 @@
             bindings = <
  &kp TAB       &kp LA(SPACE)  &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                   &none         &none   &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))  &kp LG(TAB)  &kp LC(LGUI)
  &kp LC(LSHFT) &kp Q          &kp W         &kp F      &kp P             &kp B              &kp F12                                                                  &kp F11       &kp J      &kp L      &kp U          &kp Y              &kp EXCL     &kp RC(RSHFT)
-&pht LSHFT ESC &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &kp O        &skq RSHFT
+&pht LSHFT ESC &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &kp O        &rsh_cl
  &kp LCTRL      &kp Z         &kp X         &kp C      &kp D             &kp V                                                                                                     &kp K      &kp H      &kp COMMA      &kp DOT            &kp FSLH     &kp RCTRL
  &kp DOWN       &kp GRAVE     &kp SQT       &kp LEFT   &l_alt_gui                                                                                                                             &r_alt_gui &kp RIGHT      &kp LBKT           &kp RBKT     &kp UP
 
