@@ -122,6 +122,7 @@
         tap-ms = <0>;
         bindings
             = <&kp LC(A)>
+            , <&kp BSPC>
             , <&kp LC(V)>
             , <&kp LC(S)>
             ;
