@@ -144,6 +144,18 @@
   };
 
   macros {
+    sacpy: sacpy {
+        label = "sacpy";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+            = <&kp LC(A)>
+            , <&kp LC(V)>
+            , <&kp LC(S)>
+            ;
+    };
     pause_vid: pause_vid {
         label = "pause_vid";
         compatible = "zmk,behavior-macro";
@@ -248,7 +260,7 @@
 
                                                                                                   &trans    &trans               &trans   &trans
                                                                                                             &trans               &trans
-                                                                                       &kp DEL    &mo 2     &mo 3               &trans   &kp RET   &trans
+                                                                                       &kp BSPC   &mo 2     &mo 3               &trans   &kp RET   &trans
 
 
             >;
@@ -257,14 +269,14 @@
         layer_fn {
             bindings = <
  &trans  &trans   &trans  &trans  &trans  &trans                            &trans                                                                   &trans  &trans     &trans   &trans    &trans     &trans    &trans
- &trans  &trans   &trans  &trans  &trans  &kp PIPE                          &trans                                                                   &trans  &trans     &trans   &trans   &trans      &trans    &trans
+ &trans  &trans   &sacpy  &trans  &trans  &kp PIPE                          &trans                                                                   &trans  &trans     &trans   &trans   &trans      &trans    &trans
  &trans  &trans   &trans  &trans  &kp F12 &trans                            &trans                                                                   &trans  &kp UNDER  &kp PLUS &kp LT   &kp GT      &kp COLON &trans
  &trans  &kp EXCL &kp AT  &kp POUND  &kp DLLR &kp PRCNT                                                                                                      &kp CARET  &kp AMPS &kp STAR  &kp LPAR   &kp RPAR  &trans
  &trans  &trans   &trans  &trans  &trans                                                                                                                                &trans   &trans    &trans     &trans    &trans
 
                                                                                        &trans  &trans                 &trans     &trans
                                                                                                &trans                 &trans
-                                                                               &trans  &trans  &trans                 &trans     &trans      &trans
+                                                                               &trans  &trans  &trans                 &trans     &kp RET      &trans
 
             >;
         };
