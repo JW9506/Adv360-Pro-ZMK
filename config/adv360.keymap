@@ -249,7 +249,7 @@
 
                                                                                                               &kp UP  &kp LGUI           &kp LGUI   &kp DOWN
                                                                                                                       &kp LALT           &kp RALT
-                                                                                                    &kp BSPC  &mo_td  &pht LCTRL GRAVE   &pht RCTRL GRAVE &mo_td   &kp SPACE
+                                                                                                    &kp BSPC  &mo_td  &kp LCTRL          &kp RCTRL  &mo_td   &kp SPACE
             >;
         };
 
