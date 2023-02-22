@@ -122,14 +122,14 @@
       compatible = "zmk,behavior-tap-dance";
       label = "L_CTRL_OR_SHFT";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <80>;
       bindings = <&kp LCTRL>, <&kp LSHFT>;
     };
     r_ctrl_shft: r_ctrl_or_shft {
       compatible = "zmk,behavior-tap-dance";
       label = "R_CTRL_OR_SHFT";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <80>;
       bindings = <&kp RCTRL>, <&kp RSHFT>;
     };
 
