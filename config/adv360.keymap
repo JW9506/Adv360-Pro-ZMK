@@ -286,7 +286,7 @@
         layer_fn {
             bindings = <
  &trans  &trans   &trans  &trans  &trans      &trans                            &trans                                                                   &trans  &trans     &trans   &trans    &trans     &trans    &trans
- &trans  &trans   &sacpy  &trans  &pause_vid  &kp PIPE                          &trans                                                                   &trans  &trans     &trans   &trans   &trans      &trans    &trans
+&trans &pause_vid &sacpy  &trans  &trans     &kp PIPE                          &trans                                                                   &trans  &trans     &trans   &trans   &trans      &trans    &trans
  &trans  &trans   &trans  &trans  &kp F12     &trans                            &trans                                                                   &trans  &kp UNDER  &kp PLUS &kp LT   &kp GT      &kp COLON &trans
  &trans  &kp EXCL &kp AT  &kp POUND  &kp DLLR &kp PRCNT                                                                                                      &kp CARET  &kp AMPS &kp STAR  &kp LPAR   &kp RPAR  &trans
  &trans  &trans   &trans  &trans  &trans                                                                                                                                &trans   &trans    &trans     &trans    &trans
