@@ -222,6 +222,7 @@
 //                                               -------------------------           ---------------------------
 
 // can first layer <> be something else? []/() be a good replacement?
+// left hand enter? mirror pos from right - check
 
         default_layer {
             bindings = <
@@ -247,7 +248,7 @@
 
                                                                                                   &trans    &trans               &trans   &trans
                                                                                                             &trans               &trans
-                                                                                       &kp BSPC   &mo 2     &mo 3               &trans   &kp RET   &trans
+                                                                                       &kp BSPC   &kp RET   &mo 3               &trans    &mo 2   &trans
 
 
             >;
