@@ -129,12 +129,14 @@
 
   macros {
     ZMK_MACRO(KR_SI,
-        wait-ms = <0>;
+        wait-ms = <20>;
         tap-ms = <0>;
         bindings
-            = <&macro_press &kp S &kp I>
+            = <&macro_press &kp S>
+            , <&macro_press &kp I>
             , <&macro_pause_for_release>
-            , <&macro_release &kp S &kp I>
+            , <&macro_release &kp I>
+            , <&macro_release &kp S>
         ;
     )
     sacpy: sacpy {
