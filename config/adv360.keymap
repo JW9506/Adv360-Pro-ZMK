@@ -158,13 +158,13 @@
   };
 
   macros {
-    ZMK_MACRO(KR_RE,
+    ZMK_MACRO(KR_SE,
         wait-ms = <0>;
         tap-ms = <0>;
         bindings
-            = <&macro_press &kp R &kp E>
+            = <&macro_press &kp S &kp E>
             , <&macro_pause_for_release>
-            , <&macro_release &kp R &kp E>
+            , <&macro_release &kp S &kp E>
         ;
     )
     sacpy: sacpy {
@@ -266,7 +266,7 @@
 
         default_layer {
             bindings = <
- &kp TAB           &kp LA(SPACE)  &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                   &none         &KR_RE     &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))  &kp LG(TAB)  &kp LC(LGUI)
+ &kp TAB           &kp LA(SPACE)  &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                   &none         &KR_SE     &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))  &kp LG(TAB)  &kp LC(LGUI)
 &pht LC(LSHFT) ESC &kp Q          &kp W         &kp F      &kp P             &kp B              &kp F12                                                                  &kp F11       &kp J      &kp L      &kp U          &kp Y              &kp EXCL     &pht RC(RSHFT) ESC
  &lsh_cl           &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &kp O        &rsh_cl
 &pht LCTRL SPACE   &kp Z          &kp X         &kp C      &kp D             &kp V                                                                                                     &kp K      &kp H      &kp BSPC       &kp RET            &kp FSLH     &pht RCTRL ESC
