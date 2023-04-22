@@ -169,6 +169,19 @@
             , <&macro_release &kp S>
         ;
     )
+    ZMK_MACRO(KR_SPAM_N,
+        wait-ms = <100>;
+        tap-ms = <50>;
+        bindings
+            = <&macro_tap &kp N>
+            , <&macro_tap &kp N>
+            , <&macro_tap &kp N>
+            , <&macro_pause_for_release>
+            , <&macro_tap &kp N>
+            , <&macro_tap &kp N>
+            , <&macro_tap &kp N>
+        ;
+    )
     sacpy: sacpy {
         label = "sacpy";
         compatible = "zmk,behavior-macro";
@@ -284,7 +297,7 @@
             bindings = <
  &kp TAB           &kp LA(SPACE)  &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)      &none                                                                   &none         &tog 1     &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))  &kp LG(TAB)  &kp LC(LGUI)
 &pht LC(LSHFT) ESC &kp Q          &kp W         &kp F      &kp P             &kp B              &kp F12                                                                  &kp F11       &kp J      &kp L      &kp U          &kp Y              &kp EXCL     &pht RC(RSHFT) ESC
- &lsh_cl           &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M      &kp N      &kp E          &kp I              &KR_SI       &rsh_cl
+ &lsh_cl           &kp A          &kp R         &kp S      &kp T             &kp G             &kp LEFT                                                                 &kp RIGHT      &kp M     &KR_SPAM_N  &kp E          &kp I              &KR_SI       &rsh_cl
 &pht LCTRL SPACE   &kp Z          &kp X         &kp C      &kp D             &kp V                                                                                                     &kp K      &kp H      &kp BSPC       &kp RET            &kp FSLH     &pht RCTRL ESC
  &kp DOWN          &kp GRAVE      &kp SQT       &kp LEFT   &l_alt_gui                                                                                                                             &r_alt_gui &kp RIGHT      &kp LBKT           &kp RBKT     &kp UP
 
