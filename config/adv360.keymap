@@ -194,6 +194,20 @@
             , <&macro_tap &kp N>
             , <&macro_wait_time 80>
             , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
+            , <&macro_wait_time 80>
+            , <&macro_tap &kp N>
         ;
     )
     sacpy: sacpy {
