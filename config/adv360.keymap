@@ -147,6 +147,8 @@
         bindings
             = <&macro_tap &kp I>
             , <&macro_tap &kp N>
+            , <&macro_tap &kp N>
+            , <&macro_tap &kp N>
         ;
     )
     ZMK_MACRO(KR_SPAM_N,
