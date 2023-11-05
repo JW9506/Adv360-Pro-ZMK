@@ -282,7 +282,7 @@
 
         default_layer {
             bindings = <
- &mo 1             &kp LC(F8)     &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)     &none                                                                  &none         &none      &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))     &kp LG(TAB)     &tog 2
+ &mo 1             &kp LC(F10)    &kp LC(PG_UP) &kp LA(TAB) &kp LC(PG_DN)     &kp LA(LSHFT)     &none                                                                  &none         &none      &kp LC(LG(LEFT)) &kp LC(TAB) &kp LC(LG(RIGHT))     &kp LG(TAB)     &tog 2
 &pht LC(LSHFT) ESC &kp Q          &kp W         &kp F       &kp P             &kp B             &kp LC(LS(C))                                                          &kp UP        &kp J      &kp L            &kp U          &kp Y              &kp EXCL        &pht RC(RSHFT) ESC
  &lsh_cl           &kp A          &kp R         &kp S       &kp T             &kp G             &kp LC(LS(V))                                                          &kp DOWN      &kp M      &kp N            &kp E          &kp I              &kp O           &rsh_cl
 &pht LCTRL SPACE   &kp Z          &kp X         &kp C       &kp D             &kp V                                                                                                  &kp K      &kp H            &kp DLLR       &kp RET            &kp FSLH        &pht RCTRL ESC
