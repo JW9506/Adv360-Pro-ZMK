@@ -302,7 +302,7 @@
 //                                                       |       | LGUI  |           | LGUI  |        |
 //                                               -------------------------           ---------------------------
 //                                               |       |       | LALT  |           | RALT  |        |        |
-//                                               | SPACE | LAYER |--------           --------| LAYER  |  BKSP  |
+//                                               | BKSP  | LAYER |--------           --------| LAYER  |  BSPC  |
 //                                               |       | SWITCH| LCTRL |           | RCTRL | SWITCH |        |
 //                                               -------------------------           ---------------------------
 
@@ -320,7 +320,7 @@
 
                                                                                                               &mo 1   &kp LGUI           &kp LGUI      &mo 1
                                                                                                                       &kp LALT           &kp RALT
-                                                                                                    &kp SPACE  &mo_td &kp LCTRL          &kp RCTRL     &mo_td   &kp BSPC
+                                                                                                    &kp BSPC  &mo_td  &kp LCTRL          &kp RCTRL     &mo_td   &kp SPACE
             >;
         };
 
@@ -362,7 +362,7 @@
 
                                                                                                   &trans    &trans               &trans   &trans
                                                                                                             &trans               &trans
-                                                                                          &trans  &kp RET   &mo 5               &trans    &mo 4   &trans
+                                                                                       &kp BSPC   &kp RET   &mo 5               &trans    &mo 4   &trans
 
 
             >;
