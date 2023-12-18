@@ -260,11 +260,11 @@
         compatible = "zmk,keymap";
 
 // -----------------------------------------------------------------------           ---------------------------------------------------------------------
-// |   TAB    |         |         |         |         |         |  None  |           | None |         |         |         |         |          |          |
-// |LC(LSHFT) |    Q    |    W    |    F    |    P    |    B    |  None  |           | None |    Y    |    U    |    I    |    O    |    P     | LC(LSHFT)|
-// |LSHFT/ESC |    A    |    R    |    S    |    T    |    G    |  None  |           | None |    H    |    J    |    K    |    L    |    ;     |  RSHFT   |
-// |  LCTRL   |    Z    |    X    |    C    |    D    |    V    |---------           -------|    N    |    M    |    ,    |    .    |    /     |  RCTRL   |
-// |  DOWN    |    `    |    '    |  LEFT   |   LALT  |----------                           ----------|   RALT  |  RIGHT  |    [    |    ]     |   UP     |
+// |   TAB    |         |         |         |         |         |  None  |           | None |         |         |         |         |          |   LOCK   |
+// |LC(LSHFT) |    Q    |    W    |    F    |    P    |    B    | CTRL+C |           |  UP  |    J    |    L    |    U    |    Y    |    !     | LC(LSHFT)|
+// |LSHFT/CAPS|    A    |    R    |    S    |    T    |    G    | CTRL+V |           | DOWN |    M    |    N    |    E    |    I    |    O     |RSHFT/CAPS|
+// | LC/SPACE |    Z    |    X    |    C    |    D    |    V    |---------           -------|    K    |    H    |    $    |  ENTER  |    /     |RCTRL/ESC |
+// |  DOWN    |    `    |    '    |  LEFT   | LALT/WIN|----------                           ----------|RALT/WIN |  RIGHT  |    [    |    ]     |   UP     |
 // ----------------------------------------------------                                                ----------------------------------------------------
 //
 //                                                                        Thumb Cluster
