@@ -233,8 +233,8 @@
             ;
     };
     ZMK_MACRO(MIN_CURR_WIN,
-        wait-ms = <0>;
-        tap-ms = <20>;
+        wait-ms = <50>;
+        tap-ms = <100>;
         bindings
             = <&kp LA(SPACE)>
             , <&kp N>
